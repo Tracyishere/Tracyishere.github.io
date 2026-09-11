@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="跨数据分析、机器学习、语言模型与垂直应用的个人项目作品集。" />
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23111111'/%3E%3Cpath d='M17 18h30v5H23v8h20v5H23v10h24v5H17z' fill='white'/%3E%3C/svg%3E" />
+    <title>Applied Intelligence — Project Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#top">Applied Intelligence</a>
+      <nav aria-label="主导航">
+        <a href="#projects">Projects</a><a href="#capabilities">Capabilities</a><a href="#about">About</a>
+      </nav>
+      <span class="edition">Portfolio · 2026</span>
+    </header>
+
+    <main id="top">
+      <section class="intro profile-intro" aria-labelledby="intro-title">
+        <div class="profile-portrait" role="img" aria-label="个人头像占位，可替换为真实照片"><span>AI</span><small>research<br />portfolio</small></div>
+        <div class="profile-copy">
+          <p class="kicker">Applied AI · Research & Engineering</p>
+          <h1 id="intro-title">你好，我专注于用 AI 技术把真实世界问题变成可落地的研究与应用。</h1>
+          <p class="bio">项目横跨数据分析、机器学习、深度学习、语言模型、智能体和科学应用，面向临床与生物、金融、气象能源等真实场景。</p>
+          </ul>
+          <div class="profile-links"><a href="#projects">Selected work</a><a href="#capabilities">Research areas</a></div>
+        </div>
+      </section>
+
+      <section class="snapshot" aria-label="作品集概览">
+        <p>Selected portfolio snapshot</p>
+        <dl class="index-stats"><div><dt>16</dt><dd>精选项目</dd></div><div><dt>8</dt><dd>应用领域</dd></div><div><dt>2.7M</dt><dd>最大数据集</dd></div><div></dl>
+      </section>
+
+      <section class="projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div><p class="section-no">01 / Selected Work</p><h2 id="projects-title">Projects</h2></div>
+          <p id="project-count" aria-live="polite">16 个项目</p>
+        </div>
+        <div class="filter-row" role="group" aria-label="按领域筛选项目">
+          <button class="filter active" data-filter="all" type="button">全部</button><button class="filter" data-filter="data" type="button">数据分析</button><button class="filter" data-filter="health" type="button">生命与健康</button><button class="filter" data-filter="bio" type="button">生物与农业</button><button class="filter" data-filter="climate" type="button">气象与能源</button><button class="filter" data-filter="language" type="button">语言与知识</button><button class="filter" data-filter="science" type="button">科学与工程</button><button class="filter" data-filter="finance" type="button">金融</button>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="capabilities" id="capabilities" aria-labelledby="capabilities-title">
+        <div class="section-heading">
+          <div><p class="section-no">02 / Capability Map</p><h2 id="capabilities-title">How I Work</h2></div>
+        </div>
+        <div class="capability-map">
+          <div class="capability-flow" aria-label="工作流程">
+            <small>WORKFLOW</small><span>结构化数据</span><i>→</i><span>建立模型</span><i>→</i><span>严格验证</span><i>→</i><span>形成决策</span>
+          </div>
+          <div class="capability-list">
+            <article class="capability-row">
+              <span class="capability-index">01</span>
+              <div class="capability-copy"><h3>数据工程与科研管线</h3><p>把临床表格、传感器序列、行情数据和原始质谱信号转化为可复现、可追溯且可直接进入分析的标准数据。</p><div class="capability-tools"><span>Python</span><span>R</span><span>MATLAB</span><span>Data pipelines</span></div></div>
+              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>eROI-LC 质谱平台<br />股票指标引擎<br />城市空间面板</p></div>
+            </article>
+            <article class="capability-row">
+              <span class="capability-index">02</span>
+              <div class="capability-copy"><h3>统计推断与可信验证</h3><p>围绕不确定性、偏差和泛化能力设计分析，用贝叶斯推断、空间计量、一致性检验及外部验证支撑结论。</p><div class="capability-tools"><span>MCMC</span><span>Spatial models</span><span>Bootstrap</span><span>Bland–Altman</span></div></div>
+              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>BAPC 疾病负担<br />可穿戴一致性<br />流感 MEM 阈值</p></div>
+            </article>
+            <article class="capability-row">
+              <span class="capability-index">03</span>
+              <div class="capability-copy"><h3>机器学习与深度学习</h3><p>从经典集成模型到深度时序与多模态网络，完成特征工程、模型比较、消融实验和可解释分析的完整闭环。</p><div class="capability-tools"><span>scikit-learn</span><span>PyTorch</span><span>XGBoost</span><span>SHAP</span></div></div>
+              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>ARDS 风险预测<br />气象负荷预测<br />EEG 多模态建模</p></div>
+            </article>
+            <article class="capability-row">
+              <span class="capability-index">04</span>
+              <div class="capability-copy"><h3>优化、控制与决策支持</h3><p>将模型输出连接到收益、风险和工程约束，使算法不仅给出预测，还能形成可执行的资源配置与维护建议。</p><div class="capability-tools"><span>Reinforcement learning</span><span>Linear programming</span><span>Multi-objective</span></div></div>
+              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>双 Critic 灌溉优化<br />RIS 波束训练<br />阀门维修决策</p></div>
+            </article>
+            <article class="capability-row">
+              <span class="capability-index">05</span>
+              <div class="capability-copy"><h3>跨领域问题落地</h3><p>根据医学、农业、能源、金融和工业系统的评价标准重构问题，让同一套建模能力适应不同的数据限制与业务目标。</p><div class="capability-tools"><span>Health</span><span>Agriculture</span><span>Climate & Energy</span><span>Finance</span><span>Industry</span></div></div>
+              <div class="capability-proof"><small>DELIVERY</small><p>可复现代码<br />验证图表<br />结构化结论</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <div><p class="section-no">03 / Working Principles</p><h2 id="about-title">好的模型，首先要经得起追问。</h2></div>
+        <div class="about-copy"><p>我关注真实数据中的缺失、偏移、泄漏、收敛与解释性问题。项目交付通常包含可复现代码、结构化结果、验证图表和面向非技术读者的研究叙事。</p><ol><li><span>01</span>数据先于模型</li><li><span>02</span>验证先于结论</li><li><span>03</span>局限同样是结果</li></ol></div>
+      </section>
+    </main>
+
+    <footer><span>Applied Intelligence</span><span>Contact: Tracyishere@outlook.com</span></footer>
+    <dialog id="project-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" type="button" aria-label="关闭">×</button><div id="dialog-content"></div></dialog>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">太赫兹雷达与 RIS 波束预测流程</title>
+  <desc id="desc">雷达感知、特征编码、RIS 信息融合、波束预测和动态码本组成的技术流程图。</desc>
+  <rect width="1400" height="720" fill="#ffffff"/>
+  <g fill="none" stroke="#111111" stroke-width="3">
+    <rect x="70" y="180" width="250" height="250"/>
+    <rect x="405" y="180" width="250" height="250"/>
+    <rect x="740" y="180" width="250" height="250"/>
+    <rect x="1075" y="180" width="250" height="250"/>
+    <path d="M320 305H405M655 305H740M990 305H1075"/>
+    <path d="M382 292l23 13-23 13M717 292l23 13-23 13M1052 292l23 13-23 13" fill="#111111"/>
+    <path d="M865 430v96h335v-96" stroke-dasharray="9 9"/>
+  </g>
+  <g fill="#111111" font-family="Inter,Arial,'PingFang SC',sans-serif">
+    <text x="70" y="80" font-size="24" font-weight="700" letter-spacing="4">SENSING → FUSION → PREDICTION → CONTROL</text>
+    <text x="70" y="118" font-size="18" fill="#666666">Radar-assisted RIS beam training workflow</text>
+    <text x="100" y="235" font-size="18" font-weight="700" letter-spacing="2">01 / RADAR</text>
+    <text x="100" y="300" font-size="32" font-weight="700">雷达感知</text>
+    <text x="100" y="345" font-size="18" fill="#666666">距离 · 速度 · 角度</text>
+    <text x="435" y="235" font-size="18" font-weight="700" letter-spacing="2">02 / ENCODER</text>
+    <text x="435" y="300" font-size="32" font-weight="700">特征编码</text>
+    <text x="435" y="345" font-size="18" fill="#666666">深度特征提取器</text>
+    <text x="770" y="235" font-size="18" font-weight="700" letter-spacing="2">03 / FUSION</text>
+    <text x="770" y="300" font-size="32" font-weight="700">信息融合</text>
+    <text x="770" y="345" font-size="18" fill="#666666">Radar + RIS state</text>
+    <text x="1105" y="235" font-size="18" font-weight="700" letter-spacing="2">04 / OUTPUT</text>
+    <text x="1105" y="300" font-size="32" font-weight="700">波束预测</text>
+    <text x="1105" y="345" font-size="18" fill="#666666">最佳波束 · 动态码本</text>
+    <text x="70" y="610" font-size="17" font-weight="700" letter-spacing="2">EVALUATION</text>
+    <text x="70" y="650" font-size="20">穷举搜索　/　分层搜索　/　纯雷达　/　信息融合　/　深度模型</text>
+    <text x="1198" y="555" text-anchor="end" font-size="16" fill="#666666">feedback loop</text>
+  </g>
+</svg>
