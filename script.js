@@ -203,25 +203,11 @@ const projects = [
     details: ["R 流程覆盖数据准备、遗传相关估计、结构方程建模、因子 GWAS 和可视化。", "LDSC 先给出遗传力和两两相关，SEM 再检验潜在因子是否解释这些相关。", "全部基于公开汇总统计量，不依赖个体基因型原文。"]
   },
   {
-    id: "power", category: "climate", featured: true, index: "30", label: "Energy · Forecasting",
-    title: "气象驱动的电力负荷预测",
-    summary: "融合气象、节假日和历史负荷，用 VMD–IDBO–BiGRU–Attention 预测高负载变电站短期负载率。",
-    preview: "./assets/power-report-collage.png", image: "./assets/power-forecast.png", metrics: [["最佳 R²", "0.885"], ["数据", "2.7M"]],
-    details: ["项目使用 VMD、IDBO、BiGRU 与 Attention 构建气象驱动的短期负荷预测网络。", "模型在约 270 万条小时级记录上联合利用气象、节假日和历史负荷。", "有效聚类平均 R² 为 0.781，最佳聚类达到 0.885，用于识别高负载站点的短期风险。"]
-  },
-  {
     id: "acfault", category: "climate", index: "31", label: "Predictive Maintenance",
     title: "空调系统故障提前预警",
     summary: "把压比限载故障从实时阈值报警升级为 30、60、120 分钟提前预测，并验证跨机组泛化能力。",
     preview: "./assets/ac-fault-collage.png", image: "./assets/ac-fault-auc.png", metrics: [["记录", "34,359"], ["工程特征", "100+"]],
     details: ["项目使用 XGBoost、LightGBM、随机森林和 LSTM 做设备故障提前预警。", "23 项原始传感器被扩展为 100 余项滞后、滚动和交叉特征，并严格按时间切分。", "模型分别预测未来 30、60 和 120 分钟的压比限载，再用 SHAP 和跨机组验证看前兆是否可迁移。"]
-  },
-  {
-    id: "tea", category: "bio", index: "32", label: "Agricultural Remote Sensing",
-    title: "茶叶多光谱色素含量反演",
-    summary: "用多光谱植被指数估算茶叶叶绿素与类胡萝卜素，并以严格划分比较线性、核方法和集成模型。",
-    preview: "./assets/tea-model-collage.png", image: "./assets/tea-rf-a.png", metrics: [["ROI 样本", "372"], ["模型", "8"]],
-    details: ["项目比较 Ridge、SVR、随机森林、Bagging、GBR 等八类回归模型。", "65 个植被指数在训练集内去冗余后保留 50 个，再做训练、验证和独立测试。", "结果给出不同色素的较优模型，同时用偏低的测试集 R² 标明现有多光谱特征的上限。"]
   }
 ];
 
@@ -240,7 +226,7 @@ function visualMarkup(project, dialogMode = false) {
 function visualRank(project) {
   const src = project.preview || project.image || "";
   if (!src) return 100;
-  const order = ["refseg-sample", "minerals", "power", "tea", "influenza", "ac-fault", "valve", "irrigation", "pinn", "bapc", "thz"];
+  const order = ["refseg-sample", "minerals", "influenza", "ac-fault", "valve", "irrigation", "pinn", "bapc", "thz"];
   const index = order.findIndex(key => src.includes(key));
   return index === -1 ? 50 : index;
 }
