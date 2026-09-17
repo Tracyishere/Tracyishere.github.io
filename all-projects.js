@@ -22,7 +22,8 @@ function renderArchive() {
   const query = archiveSearch.value.trim().toLowerCase();
   const visible = projects.filter(project => {
     const matchesCategory = activeFilter === "all" || project.category === activeFilter;
-    const matchesQuery = !query || project.description.toLowerCase().includes(query) || categoryLabels[project.category].toLowerCase().includes(query);
+    const haystack = `${project.description} ${categoryLabels[project.category]}`.toLowerCase();
+    const matchesQuery = !query || haystack.includes(query);
     return matchesCategory && matchesQuery;
   });
 
