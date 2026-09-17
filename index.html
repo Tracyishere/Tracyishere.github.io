@@ -13,7 +13,7 @@
     <header class="topbar">
       <a class="brand" href="#top">Applied Intelligence</a>
       <nav aria-label="主导航">
-        <a href="#projects">Projects</a><a href="#capabilities">Capabilities</a><a href="#about">About</a>
+        <a href="#projects">Projects</a><a href="./all-projects.html">All Projects</a><a href="#capabilities">Capabilities</a><a href="#about">About</a>
       </nav>
       <span class="edition">Portfolio · 2026</span>
     </header>
@@ -23,25 +23,24 @@
         <div class="profile-portrait" role="img" aria-label="个人头像占位，可替换为真实照片"><span>AI</span><small>research<br />portfolio</small></div>
         <div class="profile-copy">
           <p class="kicker">Applied AI · Research & Engineering</p>
-          <h1 id="intro-title">你好，我专注于用 AI 技术把真实世界问题变成可落地的研究与应用。</h1>
-          <p class="bio">项目横跨数据分析、机器学习、深度学习、语言模型、智能体和科学应用，面向临床与生物、金融、气象能源等真实场景。</p>
-          </ul>
+          <h1 id="intro-title">把真实问题做成可验证的模型与系统。</h1>
+          <p class="bio">主线是大模型、视觉语言和智能体，也做科学机器学习、强化学习，以及气象能源、农业与工业里能对上数据的场景。</p>
           <div class="profile-links"><a href="#projects">Selected work</a><a href="#capabilities">Research areas</a></div>
         </div>
       </section>
 
       <section class="snapshot" aria-label="作品集概览">
         <p>Selected portfolio snapshot</p>
-        <dl class="index-stats"><div><dt>16</dt><dd>精选项目</dd></div><div><dt>8</dt><dd>应用领域</dd></div><div><dt>2.7M</dt><dd>最大数据集</dd></div><div></dl>
+        <dl class="index-stats"><div><dt>119</dt><dd>项目档案</dd></div><div><dt>32</dt><dd>代表项目</dd></div><div><dt>8</dt><dd>研究主线</dd></div></dl>
       </section>
 
       <section class="projects-section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
           <div><p class="section-no">01 / Selected Work</p><h2 id="projects-title">Projects</h2></div>
-          <p id="project-count" aria-live="polite">16 个项目</p>
+          <p id="project-count" aria-live="polite">32 个项目</p>
         </div>
-        <div class="filter-row" role="group" aria-label="按领域筛选项目">
-          <button class="filter active" data-filter="all" type="button">全部</button><button class="filter" data-filter="data" type="button">数据分析</button><button class="filter" data-filter="health" type="button">生命与健康</button><button class="filter" data-filter="bio" type="button">生物与农业</button><button class="filter" data-filter="climate" type="button">气象与能源</button><button class="filter" data-filter="language" type="button">语言与知识</button><button class="filter" data-filter="science" type="button">科学与工程</button><button class="filter" data-filter="finance" type="button">金融</button>
+        <div class="filter-row" role="group" aria-label="按研究主线筛选项目">
+          <button class="filter active" data-filter="all" type="button">全部</button><button class="filter" data-filter="llm" type="button">大模型与智能体</button><button class="filter" data-filter="gen" type="button">生成与多模态</button><button class="filter" data-filter="health" type="button">医疗健康</button><button class="filter" data-filter="bio" type="button">生物化学</button><button class="filter" data-filter="climate" type="button">气象能源</button><button class="filter" data-filter="finance" type="button">金融商业</button><button class="filter" data-filter="science" type="button">智能系统与工程</button><button class="filter" data-filter="data" type="button">数据分析</button>
         </div>
         <div class="project-grid" id="project-grid"></div>
       </section>
@@ -57,18 +56,18 @@
           <div class="capability-list">
             <article class="capability-row">
               <span class="capability-index">01</span>
-              <div class="capability-copy"><h3>数据工程与科研管线</h3><p>把临床表格、传感器序列、行情数据和原始质谱信号转化为可复现、可追溯且可直接进入分析的标准数据。</p><div class="capability-tools"><span>Python</span><span>R</span><span>MATLAB</span><span>Data pipelines</span></div></div>
-              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>eROI-LC 质谱平台<br />股票指标引擎<br />城市空间面板</p></div>
+              <div class="capability-copy"><h3>数据工程与科研管线</h3><p>把传感器序列、空间面板、高光谱图像和原始质谱信号转化为可复现、可追溯且可直接进入模型的标准数据。</p><div class="capability-tools"><span>Python</span><span>R</span><span>MATLAB</span><span>Data pipelines</span></div></div>
+              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>eROI-LC 质谱平台<br />CosMx 空间组学<br />城市空间面板</p></div>
             </article>
             <article class="capability-row">
               <span class="capability-index">02</span>
-              <div class="capability-copy"><h3>统计推断与可信验证</h3><p>围绕不确定性、偏差和泛化能力设计分析，用贝叶斯推断、空间计量、一致性检验及外部验证支撑结论。</p><div class="capability-tools"><span>MCMC</span><span>Spatial models</span><span>Bootstrap</span><span>Bland–Altman</span></div></div>
-              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>BAPC 疾病负担<br />可穿戴一致性<br />流感 MEM 阈值</p></div>
+              <div class="capability-copy"><h3>统计推断与可信验证</h3><p>围绕不确定性、偏差和泛化能力设计分析，用贝叶斯推断、空间计量、长程时序和外部验证支撑结论。</p><div class="capability-tools"><span>MCMC</span><span>Spatial models</span><span>Bootstrap</span><span>MEM / DLNM</span></div></div>
+              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>BAPC 疾病负担<br />流感 MEM 阈值<br />城市空间计量</p></div>
             </article>
             <article class="capability-row">
               <span class="capability-index">03</span>
-              <div class="capability-copy"><h3>机器学习与深度学习</h3><p>从经典集成模型到深度时序与多模态网络，完成特征工程、模型比较、消融实验和可解释分析的完整闭环。</p><div class="capability-tools"><span>scikit-learn</span><span>PyTorch</span><span>XGBoost</span><span>SHAP</span></div></div>
-              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>ARDS 风险预测<br />气象负荷预测<br />EEG 多模态建模</p></div>
+              <div class="capability-copy"><h3>大模型、生成与深度学习</h3><p>从视觉语言模型、智能体搜索到 PINN、扩散和多模态网络，完成训练、消融、量化部署和可解释分析的完整闭环。</p><div class="capability-tools"><span>PyTorch</span><span>Transformers</span><span>Diffusion</span><span>SHAP</span></div></div>
+              <div class="capability-proof"><small>PROJECT EVIDENCE</small><p>Qwen3-VL 指代分割<br />LLM + MCTS 智能体<br />气象负荷预测</p></div>
             </article>
             <article class="capability-row">
               <span class="capability-index">04</span>
@@ -77,7 +76,7 @@
             </article>
             <article class="capability-row">
               <span class="capability-index">05</span>
-              <div class="capability-copy"><h3>跨领域问题落地</h3><p>根据医学、农业、能源、金融和工业系统的评价标准重构问题，让同一套建模能力适应不同的数据限制与业务目标。</p><div class="capability-tools"><span>Health</span><span>Agriculture</span><span>Climate & Energy</span><span>Finance</span><span>Industry</span></div></div>
+              <div class="capability-copy"><h3>跨领域问题落地</h3><p>根据科学计算、农业、能源和工业系统的评价标准重构问题，让同一套建模能力适应不同的数据限制与业务目标。</p><div class="capability-tools"><span>LLM & Agents</span><span>Science</span><span>Climate & Energy</span><span>Agriculture</span><span>Industry</span></div></div>
               <div class="capability-proof"><small>DELIVERY</small><p>可复现代码<br />验证图表<br />结构化结论</p></div>
             </article>
           </div>

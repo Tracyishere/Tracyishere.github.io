@@ -1,0 +1,478 @@
+[
+  {
+    "description": "指称表达式分割（Referring Expression Segmentation）。用分割 Transformer / Seg-Expert，数据侧涉及 RefCOCO 和 COCO 2014 训练验证集。",
+    "category": "llm"
+  },
+  {
+    "description": "美国、澳大利亚关键矿产政策、新闻和智库文本分析。用 BERT 主题模型走多条技术路线，产出行动者和国家层面报告。",
+    "category": "data"
+  },
+  {
+    "description": "地区主变负荷预测。先按气象相关性筛相似日、再聚类，模型用 VMD + 改进优化 + BiGRU-Attention；高负荷设备单独建模。",
+    "category": "climate"
+  },
+  {
+    "description": "茶叶多光谱成像与叶绿素（chl）相关分析。有原始 rar/xlsx、结果目录，以及第四章、精度优化第五章文稿。",
+    "category": "bio"
+  },
+  {
+    "description": "2009–2018 年中国流感按四个纬度带做移动流行区间法（MEM）。在多组窗口和 i.param 下算约登指数，划分流行期。",
+    "category": "health"
+  },
+  {
+    "description": "中央空调运行数据上的故障预测。原问题是冷凝器堵塞导致压比限载，后改为提前预测；XGBoost 为主，并写了跨机组报告。",
+    "category": "climate"
+  },
+  {
+    "description": "从危大工程施工资料里抽取阀门等过程数据，并整理项目总结。和政府监管下施工安全管理的演化博弈分析相关。",
+    "category": "science"
+  },
+  {
+    "description": "灌溉决策强化学习。TD3 与 OSTC 双 Critic 分别学习收益和缺水 / 粮食安全惩罚，并带需求文档与技术报告。",
+    "category": "bio"
+  },
+  {
+    "description": "物理信息神经网络（PINN）预测工业过程产量。在拟合数据的同时约束指数衰减规律，迭代了多个改进版并对照过程特征。",
+    "category": "science"
+  },
+  {
+    "description": "IHME GBD 2023 疾病负担数据的 BAPC 分析。按患病率、死亡、DALYs 和性别分组，估计年龄-时期-队列效应并出图出报告。",
+    "category": "health"
+  },
+  {
+    "description": "毫米波 / 太赫兹雷达波束训练系统。用深度学习和融合优化提高波束选择准确率，多版本目录并存。",
+    "category": "science"
+  },
+  {
+    "description": "大模型策略加上蒙特卡洛树搜索（MCTS），再用 RAG 检索专家轨迹来引导智能体。完成度一般。",
+    "category": "llm"
+  },
+  {
+    "description": "大模型结合 RGB / 空间视觉（SpatialRGPT），有 LLaMA 下载和 LLM+RGB 训练脚本。",
+    "category": "llm"
+  },
+  {
+    "description": "QVLM、LLaVA 一类多模态视觉语言模型的微调与验证。含混合验证 jsonl、LLaVA 工程和 Hugging Face 说明。",
+    "category": "llm"
+  },
+  {
+    "description": "用大模型做指代消解、流程网关识别，再把结果写入 Neo4j 知识图谱。附带一套 neo4j-community 5.19。",
+    "category": "llm"
+  },
+  {
+    "description": "BART 结合知识图谱（GAT）的生成模型，目录名为 BartWithKG，含模型和数据集子目录。",
+    "category": "llm"
+  },
+  {
+    "description": "科幻文本、社交媒体、论文和主流媒体语料的传播分析。做预处理、传播路径可视化和文本分析。",
+    "category": "data"
+  },
+  {
+    "description": "MV-VTON 多视角虚拟试衣，含增强、视角模块和需求说明文档。",
+    "category": "gen"
+  },
+  {
+    "description": "冷水机组运行数据上比较 Diffusion、VAE、WGAN 生成模型。用 Optuna 调参，并输出最优模型和对比结果。",
+    "category": "gen"
+  },
+  {
+    "description": "三个视觉工程合集：U-ViT 扩散生成、Diff-Retinex 低光增强、RMT 检测/分割骨干。",
+    "category": "gen"
+  },
+  {
+    "description": "布局引导的扩散模型注意力仿真（SD_SIM / layout-guidance）。用来检查生成过程中的空间注意力是否跟布局对齐。",
+    "category": "gen"
+  },
+  {
+    "description": "分子动力学推断的迁移学习，预测有限应变下的弹性常数和能量面。有拉伸/压缩/剪切数据、训练与验证脚本。",
+    "category": "bio"
+  },
+  {
+    "description": "CosMx 空间转录组细胞分割对比。同一 FOV 上跑 Cellpose、StarDist、Baysor、ComSeg 再合并评估。",
+    "category": "bio"
+  },
+  {
+    "description": "流场模态分解。对 u/v 速度场做 POD、SPOD，再结合复值 ICA 和 Hilbert-Huang 变换，输出流场图像。",
+    "category": "science"
+  },
+  {
+    "description": "CNN-Transformer 多模态脑肿瘤分割，主数据是 BraTS2018。有模态消融脚本、指标绘图和多次训练 runs。",
+    "category": "health"
+  },
+  {
+    "description": "D-SCRIPT 预测蛋白质相互作用，再对人类蛋白 fasta 矩阵做列重命名和结果后处理。",
+    "category": "bio"
+  },
+  {
+    "description": "液相色谱-质谱预处理。eROI-LC 做等距 ROI / EIC 提取，AntDAS-CPR 做多元曲线分辨，偏代谢组学平台。",
+    "category": "bio"
+  },
+  {
+    "description": "多输出序贯证据积累决策模型。数据准备、训练和证据积累过程可视化都在。",
+    "category": "data"
+  },
+  {
+    "description": "机器人行为感知。YOLO 姿态估计、同轴动作分类，再接到 MoveIt 运动规划，含评估结果。",
+    "category": "science"
+  },
+  {
+    "description": "2003–2022 年 285 个地级市内卷程度的空间面板回归。要求邻接、地理、经济三类矩阵独立建模，交付莫兰指数、LM、Hausman、SDM 结果和报告。",
+    "category": "data"
+  },
+  {
+    "description": "回声状态网络（ESN）递归预测，从约 5 千步做到 5 万步以上。用双层 reservoir 和贝叶斯优化调谱半径、泄漏率等。",
+    "category": "data"
+  },
+  {
+    "description": "基因组遗传力 / 遗传相关分析，核心是 LDSC。有原始与处理后数据、脚本、图和 ANALYSIS_GUIDE。",
+    "category": "bio"
+  },
+  {
+    "description": "用 TD3 强化学习控制输运链系统，训练过程留下多轮奖励曲线和 actor/critic 权重。同时做了雅可比分析、分岔图和 Hopf 分岔，用来看系统稳定性。",
+    "category": "bio"
+  },
+  {
+    "description": "方面级情感分析项目，覆盖 ATE、ASTE、AOPE、UABSA 等子任务。有独立 code/script、总览图和中英文报告。",
+    "category": "data"
+  },
+  {
+    "description": "NetPower 网络同步聚类与社区发现。用仿真网络比较不同聚类/同步方法，和 Archive 2 里的 R 实验同属一类题目。",
+    "category": "data"
+  },
+  {
+    "description": "隐私保护谱聚类及相关算法的 R 实现。在欧邮时序网络等真实数据上比较 NMI、ARI、F1，并画了偏置、迭代次数、p/q 等参数影响图。",
+    "category": "data"
+  },
+  {
+    "description": "用 GAN / WGAN 给不平衡分类做数据增强。目录里有原始 GAN、WGAN、lift 实验和已废弃版本，偏方法对比。",
+    "category": "gen"
+  },
+  {
+    "description": "射击瞄准场景下，用脑电、瞄准轨迹和扳机压力做序列建模。对比了 LSTM、RNN、Transformer 等基线，并保留训练日志和输出。",
+    "category": "science"
+  },
+  {
+    "description": "学生作答时效响应矩阵的缺失值填补。对比了 KNN、矩阵分解、能力-难度模型和混合方法，并有填补说明与学生分数对比图。",
+    "category": "data"
+  },
+  {
+    "description": "Omni3D 三维目标检测，按物体尺寸报告 AP3D、BEV AP 等指标。有独立实验目录、模型和评估报告。",
+    "category": "science"
+  },
+  {
+    "description": "医学影像相关的多智能体强化学习（MARL）框架。附了论文 PDF，以及代码与论文一致性对照、方法说明。",
+    "category": "bio"
+  },
+  {
+    "description": "玉环地区空间数据的贝叶斯 BYM 模型。用 R 画热力图，并输出 OLS、莫兰指数等空间回归诊断。",
+    "category": "data"
+  },
+  {
+    "description": "基于 latent diffusion 的草图到图像（img2img）生成。有自定义脚本、输出图和打包结果。",
+    "category": "gen"
+  },
+  {
+    "description": "KBS_EFHM 多粒度推荐或社区问答评分预测。含评分数据 ratings.dat、数据处理和模型训练入口。",
+    "category": "data"
+  },
+  {
+    "description": "多无人机 MADQN 强化学习，比较固定无人机、只看位置、随机策略等设定。输出时延、能耗、速率和奖励曲线。",
+    "category": "bio"
+  },
+  {
+    "description": "卷积知识追踪（CKT）学生学习建模，用来根据答题记录预测掌握程度。主体是 Convolutional-Knowledge-Tracing 工程。",
+    "category": "data"
+  },
+  {
+    "description": "上证指数时间序列建模，并用模型置信集（MCS）做方法比较。有完整版 notebook、大框架说明和报告生成脚本。",
+    "category": "finance"
+  },
+  {
+    "description": "GEDI 星载激光雷达生物量 / 森林结构深度学习（GEDI-BDL）。有 torch 代码、演示数据和聚类结果。",
+    "category": "data"
+  },
+  {
+    "description": "CIC-IDS 工作日下午 DDoS 流量的特征分析。做了聚类（含调参 KMeans）和幻灯片式结果页。",
+    "category": "data"
+  },
+  {
+    "description": "分类模型指标复现与展示。包含分析报告 PDF/Word，以及复现代码和网页展示目录。",
+    "category": "data"
+  },
+  {
+    "description": "条件 GAN（cGAN）按条件生成样本。有原始数据和生成样本压缩包。",
+    "category": "gen"
+  },
+  {
+    "description": "Diffusion-TS 时间序列扩散生成。有抽取数据、处理后数据和一份报告，",
+    "category": "gen"
+  },
+  {
+    "description": "空间 VAE 结合 IAVOA / AVOA 等优化算法做空间数据建模。有 mat 静态数据、csv 结果和运行日志。",
+    "category": "gen"
+  },
+  {
+    "description": "股票数据可视化 Web 应用，Flask 风格 app 加静态前端，数据在 stock_data。",
+    "category": "finance"
+  },
+  {
+    "description": "ResDiff 残差扩散超分，配了大量图像数据。代码量不大，图像目录很重。",
+    "category": "gen"
+  },
+  {
+    "description": "Cs-FNNS 与 SRNet，偏图像隐写或隐写分析。附王老师 5.25 需求文档。",
+    "category": "gen"
+  },
+  {
+    "description": "基因序列 CpG 位点预测，含预处理、模型和预测脚本，以及序列分析报告。",
+    "category": "bio"
+  },
+  {
+    "description": "视频异常检测，数据是 UCSD ped2 行人视频。主工程为 anomalyDetection。",
+    "category": "data"
+  },
+  {
+    "description": "化学表格 Thechem.xlsx 上的回归对比。比较随机森林、XGBoost、MLP 和 Stacking，并做残差、交叉验证和去离群点重拟合。",
+    "category": "bio"
+  },
+  {
+    "description": "因果特征选择，跑 EAMB 和 pyCausalFS，并批量检索合适数据集。有 data 目录和综合检索脚本。",
+    "category": "data"
+  },
+  {
+    "description": "SSTF 等高光谱超分或融合，训练/测试用 CAVE。有融合基线代码和实验结果 PPT。",
+    "category": "science"
+  },
+  {
+    "description": "多模态情感识别，覆盖 RAVDESS、CREMA-D、SAVEE、EmoDB、CK+ 等数据集。音频、表情和 Transformer 融合都有训练与测试结果。",
+    "category": "data"
+  },
+  {
+    "description": "图像加语音的多模态情感识别，结构和 multimode 接近，含预处理、训练和示例测试。",
+    "category": "data"
+  },
+  {
+    "description": "江南传统村落布局自动生成：先定条件，再生成道路和建筑，可输出 SVG/PNG。另有建筑数据集。",
+    "category": "data"
+  },
+  {
+    "description": "文本分类器，带原始数据压缩包和分类结果。代码只有主脚本，数据量很大。",
+    "category": "data"
+  },
+  {
+    "description": "MPGCN 图卷积，区分患者与健康对照，并输出节点重要性和 ROC。有 v1/v4 两套实现。",
+    "category": "health"
+  },
+  {
+    "description": "视频模块和语音模块分别提特征，再做多模态融合（duomotai）。",
+    "category": "data"
+  },
+  {
+    "description": "记录型表格数据上的深度异常检测，带注入异常、ROC 评估和比赛/论文思路材料。",
+    "category": "data"
+  },
+  {
+    "description": "Fashion-MNIST 图像分类，留有 best 模型权重。代码和说明都挤在嵌套「新建文件夹」里。",
+    "category": "data"
+  },
+  {
+    "description": "ADRNet 光流或运动估计，并与 RAFT、PWC、DeepFlow 等基线对比。有补丁数据集和多版训练日志。",
+    "category": "science"
+  },
+  {
+    "description": "DGDTA 药物-靶点亲和力预测，旁边还有 DCGAN 生成实验和 AUC 对比。",
+    "category": "gen"
+  },
+  {
+    "description": "基因分型与变异易感性关联，工具链含 PLINK2、BGEN、RAP。附脑卒中遗传易感性等文献。",
+    "category": "bio"
+  },
+  {
+    "description": "医院临床数据上比较机器学习与传统 Logistic，主结局是是否合并 ARDS。还做了特征筛选、VIF、KM 生存分析和外部验证，并有 Streamlit 演示。",
+    "category": "health"
+  },
+  {
+    "description": "BATS 编码不等错误保护，以及 bats-rl 强化学习传输。有论文 PDF、开源仓库和运行日志。",
+    "category": "bio"
+  },
+  {
+    "description": "荔枝（妃子笑 / 夹仔）保鲜试验数据分析。看商品率、褐变、霉变、腐烂、失重，以及咪鲜胺等处理因素与 TSS/TA 的关系。",
+    "category": "bio"
+  },
+  {
+    "description": "ResNet 加 xLSTM 的序列模型，数据按 change/exit 划分，留有训练日志和权重压缩包。",
+    "category": "data"
+  },
+  {
+    "description": "14 天密集追踪的多层线性模型（R）。个体内看 TR、AB、睡眠质量，个体间看性别、年龄等，需报告当天效应和滞后效应。",
+    "category": "data"
+  },
+  {
+    "description": "天气预报生成与检验流水线。有观测、预报生成器、检验器和产品输出等多套目录。",
+    "category": "climate"
+  },
+  {
+    "description": "化学性质预测，一边是 ChemBERTa 微调，一边是 CatBoost 组合模型。说明写在 run.md。",
+    "category": "bio"
+  },
+  {
+    "description": "用周温度场做物种或种群迁徙分析。多元回归树聚类后，画 2016 年迁徙路径、质心和温度驱动概率图。",
+    "category": "climate"
+  },
+  {
+    "description": "大坝（DAM）相关时间序列预报，主脚本在 Archive 里，配 Lightning 日志。",
+    "category": "data"
+  },
+  {
+    "description": "基于 twitter-roberta-base-sentiment 的情感分类，有训练、预测和性能分析文档。",
+    "category": "data"
+  },
+  {
+    "description": "铁基材料（如 BOFeN）反应动力学的 Michaelis-Menten 拟合。用实验误差列做加权最小二乘，并报告置信区间和相对标准误。",
+    "category": "data"
+  },
+  {
+    "description": "数学建模竞赛多问题实现，problem1–4 分目录，用到 CatBoost，并附 AI 使用说明。",
+    "category": "data"
+  },
+  {
+    "description": "音频功能声学特征提取。多个 metadata 批次输出音频特征 csv 和声学功能图。",
+    "category": "data"
+  },
+  {
+    "description": "Self-MM 多模态情感分析，英文 BERT 与自研整合脚本都在，",
+    "category": "data"
+  },
+  {
+    "description": "把 ResNet 从 FP32 量化到 INT8，再用 LibTorch / C++ 做推理部署，留有 trace 模型和 CMake 工程。",
+    "category": "data"
+  },
+  {
+    "description": "CEO 特征对企业绩效、薪酬的计量回归。输出多张表，包括分类/连续变量摘要、CEO 效应和滞后设定。",
+    "category": "finance"
+  },
+  {
+    "description": "降雨与液流的分布滞后非线性模型（DLNM，R）。看气象暴露对结局的滞后效应，有报告和参考代码。",
+    "category": "climate"
+  },
+  {
+    "description": "基于相似度计算的推荐系统网页（app.py）。含数据整合、相似度、方法和可视化模块。",
+    "category": "data"
+  },
+  {
+    "description": "自研穿戴/监测系统与医用脉氧仪的一致性。对心率、血氧做 Bland-Altman，分静息、运动、室内、室外。",
+    "category": "health"
+  },
+  {
+    "description": "子痫前期预测，比较 Logistic 回归和多种机器学习算法。有数据、绘图脚本和模型比较 PDF。",
+    "category": "health"
+  },
+  {
+    "description": "24 小时活动成分数据（睡眠、久坐、轻体力活动）分析。用 Aitchison 几何和替代分析看对血压等结局的影响，并比较性别差异。",
+    "category": "health"
+  },
+  {
+    "description": "深度学习图像分类，数据目录含位移图像。有预处理、训练优化脚本和 best_model.pth。",
+    "category": "data"
+  },
+  {
+    "description": "认知功能影响因素研究。用表格数据比较多种预测模型，并出对比图。",
+    "category": "health"
+  },
+  {
+    "description": "DNN+LSTM 做时间序列（GHZ-RFS 1980–2024），并用 SHAP 解释特征贡献。",
+    "category": "data"
+  },
+  {
+    "description": "从 ChEMBL、PubChem BioAssay、UniProt 采集 UGT 各亚型相关化合物活性，再格式化去重导出。",
+    "category": "data"
+  },
+  {
+    "description": "临床预测模型全流程（R）：描述统计、单因素/多因素 Logistic、VIF、Hosmer-Lemeshow、ROC 和决策曲线。",
+    "category": "health"
+  },
+  {
+    "description": "SRD 超分再叠加 DeepCache 推理加速，验证集用 DIV2K 高分辨率图。",
+    "category": "science"
+  },
+  {
+    "description": "音频先走 Whisper 转写，再用 toxic-bert / 自建分类器做偏见或毒性识别。含 whisper-small 权重。",
+    "category": "llm"
+  },
+  {
+    "description": "纳米药物 AI-PBPK 生理药动学模型（Nano-AI-PBPK-G1），用来模拟纳米粒在体内的分布。",
+    "category": "health"
+  },
+  {
+    "description": "汉语致使句研究。对「使」字句、「让」字句做特征重要性和 LASSO，找显著影响因素并写分析报告。",
+    "category": "data"
+  },
+  {
+    "description": "UCI Online Retail 零售数据分析。按月/周看销售趋势，按品类看销量和客单价，并写成报告。",
+    "category": "finance"
+  },
+  {
+    "description": "供应商采购降本分析。做 2023/2024 帕累托、供应商数量对比，以及 2025 目标降本分布。",
+    "category": "finance"
+  },
+  {
+    "description": "多平台舆情按潜伏、爆发、蔓延、消退四阶段做情感和主题分析，并比较平台表现和关键事件时间线。",
+    "category": "data"
+  },
+  {
+    "description": "236 名学生、全校课程信息的课表编排。用启发式 / 遗传算法排课，输出 ga_timetable。",
+    "category": "bio"
+  },
+  {
+    "description": "气象资料可视化，代码和数据主要在「气象资料可视」子目录。",
+    "category": "climate"
+  },
+  {
+    "description": "常微分方程（ODE）模型参数拟合（R）。输入参数表和观测数据，做 Datafitting。",
+    "category": "data"
+  },
+  {
+    "description": "休息、运动、职业任务三种状态下的生理指标分析。看心率、呼吸、面部温度，并用 SHAP 解释影响因素。",
+    "category": "health"
+  },
+  {
+    "description": "多国满意度文本爬取与可视化。有爬虫、数据源配置、趋势图和国家分析，并导出长报告。",
+    "category": "data"
+  },
+  {
+    "description": "单分子定位显微的空间点过程分析。计算 PCF、Ripley K 和 CBC，数据在 SR-Tesseler 相关目录。",
+    "category": "bio"
+  },
+  {
+    "description": "教育学三水平元分析，题目涉及父母教养或同伴关系与幼儿焦虑、问题行为。有漏斗图、编码表和参考论文。",
+    "category": "science"
+  },
+  {
+    "description": "MSTAR SAR 地面目标识别。用网络剪枝和知识蒸馏压轻量 CNN，有 10 类数据和训练日志。",
+    "category": "data"
+  },
+  {
+    "description": "图像加语音多模态情感识别。ResNet18 视觉分支加语音分支，可用 PBS 提交训练。",
+    "category": "data"
+  },
+  {
+    "description": "电池数据特征提取与分类或预测，feature/feature1 两套结果，含混淆矩阵和 best_model。",
+    "category": "data"
+  },
+  {
+    "description": "临床用药优势区间分析。用 GAM 和 DBSCAN，在年龄 18–75、pd5p 0–100% 上找 Anti=1 优于不用药的区域，并校正性别、糖尿病等。",
+    "category": "health"
+  },
+  {
+    "description": "肥胖性早熟与单纯肥胖的临床对比。含插补后临床表，以及 t 检验和倍数变化（FC）结果。",
+    "category": "health"
+  },
+  {
+    "description": "2010 年铜矿上游出口经纬度与贸易额的网络分析，再用 GNN 做贸易风险预测，有安装和项目说明。",
+    "category": "finance"
+  },
+  {
+    "description": "电机参数辨识与参数反演，两个子目录分别是识别和 8 月修订版反演。",
+    "category": "data"
+  }
+]
